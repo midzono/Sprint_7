@@ -1,16 +1,32 @@
 # Sprint_7
 
-API-тесты учебного сервиса «Яндекс Самокат». Для каждой ручки используется отдельный класс. Тесты проверяют и статус, и тело ответа.
+Проект по тестированию API учебного сервиса «Яндекс Самокат».
 
-## Запуск
-`pip install -r requirements.txt`
-`pytest -v`
+## Технологии
+
+- Python
+- pytest
+- requests
+- Allure
+
+## Установка
+
+Установить зависимости:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Запуск тестов
+
+```bash
+pytest
+```
 
 ## Allure
-`pytest --alluredir=allure-results`
-`allure generate allure-results -o allure-report --clean`
-`allure open allure-report`
 
-В GitHub по требованиям проекта добавляется только сгенерированная папка `allure-report/`; `allure-results/` не пушится.
-
-Курьеры для авторизации создаются фикстурой перед тестом и удаляются после. Курьеры, созданные в тестах создания, также удаляются после проверки.
+```bash
+pytest --alluredir=allure-results
+allure generate allure-results -o allure-report --clean
+allure open allure-report
+```
