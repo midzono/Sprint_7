@@ -11,8 +11,6 @@
 
 ## Установка
 
-Установить зависимости:
-
 ```bash
 pip install -r requirements.txt
 ```
